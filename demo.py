@@ -60,7 +60,7 @@ def generate(img):
 
 img = gr.inputs.Image()
 # Launch the de
-iface = gr.Interface(generate, inputs=[img], server_port = 21278, article = """
+iface = gr.Interface(generate, inputs=[img], article = """
      Supplementary {
        -  Please contact me on golan.itamar@gmail.com
        -  Follow me on Linkedin for similar projects - https://www.linkedin.com/in/itamar-g1/
@@ -146,4 +146,4 @@ html {
 
 
 """)
-iface.launch(debug=True)
+iface.launch(share=True)
